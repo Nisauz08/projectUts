@@ -20,11 +20,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private ArrayList<String> fotoMakanan = new ArrayList<>();
     private ArrayList<String> namaMakanan = new ArrayList<>();
+    private ArrayList<String> infoMakanan = new ArrayList<>();
     private Context context;
 
-    public RecyclerViewAdapter(ArrayList<String> fotoMakanan, ArrayList<String> namaMakanan, Context context) {
+    public RecyclerViewAdapter(ArrayList<String> fotoMakanan, ArrayList<String> namaMakanan, ArrayList<String> infoMakanan, Context context) {
         this.fotoMakanan = fotoMakanan;
-        namaMakanan = namaMakanan;
+        this.namaMakanan = namaMakanan;
+        this.infoMakanan = infoMakanan;
         this.context = context;
     }
 
@@ -38,6 +40,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return holder;
     }
 
+    //untuk menampilkan pada activity main
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
