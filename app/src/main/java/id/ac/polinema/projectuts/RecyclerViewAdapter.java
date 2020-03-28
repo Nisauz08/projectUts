@@ -1,6 +1,7 @@
 package id.ac.polinema.projectuts;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,7 +56,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             public void onClick(View v) {
                 //menampilkan tulisan
                 //Toast.makeText(context, namaMakanan.get(position), Toast.LENGTH_LONG).show();
-                
+
+                Intent intent = new Intent(context, DetailActivity.class);
+
+                intent.putExtra("foto_makanan", fotoMakanan.get(position));
+                intent.putExtra("nama_makanan", namaMakanan.get(position));
+                intent.putExtra("info_makanan", infoMakanan.get(position));
+
+                context.startActivity(intent);
+
             }
         });
     }
