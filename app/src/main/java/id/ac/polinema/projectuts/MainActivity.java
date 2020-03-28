@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         fotoMakanan.add("https://assets.bonappetit.com/photos/57acd741f1c801a1038bc801/16:9/w_1000,c_limit/basic-bulgogi.jpg");
         infoMakanan.add("Yang ini merupakan olahan daging khas Korea. Umumnya memakai daging sirloin atau bagian daging sapi pilihan. Untuk bumbunya sendiri biasanya campuran kecap asin dan gula ditambah rempah lain.");
 
-        
+
         prosesRecyclerViewAdapter();
     }
 }
