@@ -23,8 +23,8 @@
                 android:id="@+id/imageViewFotoMakanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 app:srcCompat="@drawable/kimbap" />
 
             <TextView
@@ -39,7 +39,7 @@
                 android:text="Judul Nama Makanan"
                 android:textAllCaps="false"
                 android:textSize="30sp"
-                app:fontFamily="sans-serif-condensed-medium" />
+                app:fontFamily="@font/baloo_chettan" />
 
             <TextView
                 android:id="@+id/textViewInfoMakanan"
@@ -50,7 +50,8 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="10dp"
                 android:text="Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi MakananInformasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan Informasi Makanan"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:fontFamily="@font/assistant" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
