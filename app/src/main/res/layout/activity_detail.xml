@@ -23,18 +23,22 @@
                 android:id="@+id/imageViewFotoMakanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 app:srcCompat="@drawable/kimbap" />
 
             <TextView
                 android:id="@+id/textViewNamaMakanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+
                 android:layout_marginBottom="10dp"
                 android:text="Judul Nama Makanan"
                 android:textAllCaps="false"
                 android:textSize="30sp"
-                android:textStyle="bold"
                 app:fontFamily="sans-serif-condensed-medium" />
 
             <TextView
