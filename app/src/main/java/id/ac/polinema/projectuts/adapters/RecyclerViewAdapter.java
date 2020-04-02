@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -16,6 +17,7 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import id.ac.polinema.projectuts.DetailActivity;
 import id.ac.polinema.projectuts.R;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>{
@@ -41,7 +43,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return holder;
     }
 
-    //untuk menampilkan pada activity main
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
 
@@ -54,16 +55,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
                 //menampilkan tulisan
-                //Toast.makeText(context, namaMakanan.get(position), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, namaMakanan.get(position), Toast.LENGTH_LONG).show();
 
-//                Intent intent = new Intent(context, .DetailActivity.class);
-//
-//                intent.putExtra("foto_makanan", fotoMakanan.get(position));
-//                intent.putExtra("nama_makanan", namaMakanan.get(position));
-//                intent.putExtra("info_makanan", infoMakanan.get(position));
-//
-//                context.startActivity(intent);
+                Intent intent = new Intent(context, DetailActivity.class);
 
+                intent.putExtra("foto_makanan", fotoMakanan.get(position));
+                intent.putExtra("nama_makanan", namaMakanan.get(position));
+                intent.putExtra("info_makanan", infoMakanan.get(position));
+
+                context.startActivity(intent);
             }
         });
     }
