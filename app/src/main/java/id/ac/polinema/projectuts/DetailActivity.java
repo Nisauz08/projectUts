@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class DetailActivity extends AppCompatActivity {
+public class
+DetailActivity extends AppCompatActivity {
 
     ImageView imageViewFotoMakanan;
     TextView textViewNamaMakanan;
